@@ -201,6 +201,48 @@ nav {
     left: 10%;
 }
 
+/* ---------Page Content------- */
+
+.page-content{
+    color: #000;
+}
+.page-content-dark{
+    background-color: #000;
+    padding: 3rem 1rem;
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+}
+.box-left, .box-right{
+    width: 50%;
+}
+
+
+
+/* -------Help Section------- */
+
+.contain-help img{
+    width: 100%;
+}
+
+.text-contain{
+    width: 80%;
+    margin: auto;
+}
+.text-contain p{
+    margin: 1rem auto;
+}
+.text-contain button{
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+
+
+
 
 @media only screen and (max-width: 1030px) {
     nav {
