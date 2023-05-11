@@ -40,7 +40,6 @@ a:active {
 
 nav {
     display: flex;
-    /* background-color: var(--main); */
     justify-content: space-between;
     align-items: center;
     padding: 2rem 1.5rem;
@@ -50,14 +49,14 @@ nav {
     color: var(--primary);
     font-size: 1.5rem;
     font-weight: 700;
-    width: 60%;
+    width: 62%;
 }
 
 /* -------------Burger------------ */
 
 .row-burger {
-    position: relative;
-    /* display: flex; */
+    position: absolute;
+    right: 5%;
     display: none;
     justify-content: center;
     align-items: center;
@@ -144,13 +143,11 @@ nav {
 
 .drop-list {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .drop-menu.open drop-list {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -163,17 +160,12 @@ nav {
 
 .drop-list li {
     text-align: center;
-    padding: 0.35rem;
+    padding: 0.35rem 0;
+    margin: 0 0.35rem;
 }
 
-.drop-list li.open::after {
-    content: '';
-    position: absolute;
-    background: #fff;
-    bottom: 0;
-    left: 5px;
-    width: 60px;
-    height: 2px;
+.drop-list li.open{
+    border-bottom: 1px solid white;
 }
 
 
@@ -196,13 +188,50 @@ nav {
 
 
 @media only screen and (max-width: 1030px) {
+    nav {
+        justify-content: center;
+    }
     .row-burger{
         display: flex;
     }
+    .logo-title {
+        text-align: center;
+    }
 
     .drop-menu{
+        display: none;
         height: 0;
         overflow: hidden;
+    }
+    .drop-menu.open{
+        display: flex;
+        height: 100vh;
+        background-color: #fff;
+    }
+    .drop-list {
+        flex-direction: column;
+    }
+    .logo-title.open {
+        position: absolute;
+        top: 2rem;
+        color: #000;
+    }
+    .drop-menu li.open{
+        border-bottom: 3px solid black;
+    }
+    .drop-list a{
+        font-size: 3rem;
+        color: #000;
+    }
+    .row-burger.open{
+        top: 2rem;
+    }
+    .row-burger.open  .burger-icon::before {
+        background: #000;
+    }
+    
+    .row-burger.open .burger-icon::after {
+        background: #000;
     }
 
 }
