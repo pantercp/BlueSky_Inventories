@@ -41,23 +41,27 @@ a:active {
     z-index: 3;
     height: 10vh;
 }
+
 #header.nav-scrolled {
     --text: #000;
     --text-inverse: #fff;
     --background: #fff;
 }
-#header.nav-scrolled .contain-nav{
+
+#header.nav-scrolled .contain-nav {
     background-color: var(--background);
     transition: all .5s ease-in-out;
     box-shadow: 0px 2px rgba(0, 0, 0, .1);
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 1.5rem;
 }
-#header.nav-scrolled  nav {
+
+#header.nav-scrolled nav {
     padding: 1rem 1.5rem;
     transition: all .5s ease-in-out;
 }
@@ -161,6 +165,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 .drop-menu.open drop-list {
     display: flex;
     justify-content: center;
@@ -179,7 +184,7 @@ nav {
     margin: 0 0.35rem;
 }
 
-.drop-list li.open{
+.drop-list li.open {
     border-bottom: 1px solid var(--text);
 }
 
@@ -189,12 +194,13 @@ nav {
 
 /* --------Hero Section------- */
 
-.hero-section{
+.hero-section {
     height: 600px;
     background-image: url(images/hero.jpg);
     background-position: 50% 50%;
 }
-.hero-section h1{
+
+.hero-section h1 {
     color: #fff;
     position: absolute;
     bottom: 10%;
@@ -203,41 +209,88 @@ nav {
 
 /* ---------Page Content------- */
 
-.page-content{
+.page-content {
     color: #000;
 }
-.page-content-dark{
+
+.page-content-dark {
     background-color: #000;
     padding: 3rem 1rem;
 }
-.flex-box{
+
+.flex-box {
     display: flex;
     align-items: center;
 }
-.box-left, .box-right{
+
+.box-text,
+.box-image {
     width: 50%;
 }
 
+/* -------Services Section------- */
 
+.contain-services {
+    display: flex;
+    align-items: center;
+}
 
-/* -------Help Section------- */
-
-.contain-help img{
+.contain-services img {
     width: 100%;
 }
 
-.text-contain{
+.text-contain {
     width: 80%;
     margin: auto;
 }
-.text-contain p{
+
+.text-contain p {
     margin: 1rem auto;
 }
-.text-contain button{
+
+.text-contain button {
     padding: 0.5rem;
     background-color: #000;
     color: #fff;
     border: none;
+}
+
+
+/* -------Contact Section------- */
+
+.contain-contact {
+    display: flex;
+    align-items: center;
+}
+
+.contain-contact img {
+    width: 100%;
+}
+
+/* -------Samples Section------- */
+
+.contain-samples {
+    display: flex;
+    align-items: center;
+}
+
+.contain-samples img {
+    width: 100%;
+}
+
+/* --------Testimonials------- */
+
+.client-stories h1 {
+    margin: 3rem 0;
+}
+
+.client-stories p {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.client-stories span {
+    font-weight: lighter;
 }
 
 
@@ -248,47 +301,75 @@ nav {
     nav {
         justify-content: center;
     }
-    .row-burger{
+
+    .row-burger {
         display: flex;
     }
+
     .logo-title {
         text-align: center;
     }
 
-    .drop-menu{
+    .drop-menu {
         display: none;
         height: 0;
         overflow: hidden;
     }
-    .drop-menu.open{
+
+    .drop-menu.open {
         display: flex;
         height: 100vh;
         background-color: #fff;
     }
+
     .drop-list {
         flex-direction: column;
     }
+
     .logo-title.open {
         position: absolute;
         top: 2rem;
         color: #000;
     }
-    .drop-menu li.open{
+
+    .drop-menu li.open {
         border-bottom: 3px solid black;
     }
-    .drop-list a{
+
+    .drop-list a {
         font-size: 3rem;
         color: #000;
     }
-    .row-burger.open{
+
+    .row-burger.open {
         top: 2rem;
     }
-    .row-burger.open  .burger-icon::before {
+
+    .row-burger.open .burger-icon::before {
         background: #000;
     }
-    
+
     .row-burger.open .burger-icon::after {
         background: #000;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+    .contain-services {
+        flex-wrap: wrap;
+    }
+
+    .contain-samples {
+        flex-wrap: wrap-reverse;
+    }
+
+    .contain-contact {
+        flex-wrap: wrap;
+    }
+
+    .box-image,
+    .box-text {
+        width: 100%;
+    }
 }
