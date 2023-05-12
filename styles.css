@@ -198,6 +198,7 @@ nav {
     height: 600px;
     background-image: url(images/hero.jpg);
     background-position: 50% 50%;
+    position: relative;
 }
 
 .hero-section h1 {
@@ -235,6 +236,10 @@ nav {
     align-items: center;
 }
 
+.contain-services .box-image {
+    padding: 0 1rem;
+}
+
 .contain-services img {
     width: 100%;
 }
@@ -242,6 +247,10 @@ nav {
 .text-contain {
     width: 80%;
     margin: auto;
+}
+
+.text-contain h1 {
+    font-size: 3rem;
 }
 
 .text-contain p {
@@ -355,9 +364,33 @@ nav {
 
 }
 
+@media only screen and (max-width: 900px) {
+    .contain-services h1{
+        font-size: 2rem;
+    }
+    .contain-services p{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contain-services h1{
+        font-size: 1.5rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    .contain-services p{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .contain-services {
         flex-wrap: wrap;
+    }
+    .contain-services h1{
+        font-size: 2rem;
     }
 
     .contain-samples {
