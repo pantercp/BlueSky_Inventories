@@ -280,7 +280,7 @@ nav {
 }
 
 .contain-samples .text-contain p {
-    margin: 1rem auto;
+    margin: 0 auto 1rem;
     text-align: justify;
 }
 
@@ -293,9 +293,10 @@ nav {
 
 .contain-contact img {
     width: 100%;
+    padding: 2rem;
 }
 
-.contain-contact .text-contain{
+.contain-contact .text-contain {
     margin: 1rem auto;
 }
 
@@ -315,7 +316,30 @@ nav {
     font-weight: lighter;
 }
 
+/* --------Footer------- */
 
+.section-footer {
+    color: #000;
+    margin: 4rem 1rem 2rem;
+}
+
+.legal-links {
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.legal-links a {
+    font-weight: bold;
+    margin: 1rem;
+}
+.bottom-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.certifications img{
+    max-width: 100%;
+}
 
 
 
