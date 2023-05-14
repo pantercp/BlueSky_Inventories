@@ -1,0 +1,64 @@
+/* --------Hero Section------- */
+
+.hero-section {
+    height: 600px;
+    background-image: url(images/hero.jpg);
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.hero-section h1 {
+    color: var(--background);
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+}
+
+
+/* --------Contact------- */
+
+.contain-contact {
+    display: flex;
+    align-items: center;
+}
+
+.contain-contact img {
+    width: 100%;
+    padding: 2rem;
+}
+
+.contain-contact .text-contain {
+    margin: 2rem;
+    max-width: 300px;
+}
+
+.contain-contact .box-text{
+    display: flex;
+    justify-content: center;
+}
+
+.box-text,
+.box-image {
+    width: 50%;
+}
+
+/* ----------Responsiveness------- */
+
+@media only screen and (max-width: 720px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+    .contain-contact {
+        flex-wrap: wrap;
+    }
+
+    .box-text,
+    .box-image {
+        width: 100%;
+    }
+
+    .box-text{
+        padding: 2rem 2rem 1rem;
+    }
+}
