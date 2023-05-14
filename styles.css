@@ -8,7 +8,7 @@
 }
 
 .hero-section h1 {
-    color: #fff;
+    color: var(--background);
     position: absolute;
     bottom: 3%;
     left: 10%;
@@ -16,12 +16,10 @@
 
 /* ---------Page Content------- */
 
-.page-content {
-    color: #000;
-}
 
 .page-content-dark {
-    background-color: #000;
+    background-color: var(--text);
+    color: var(--background);
     padding: 3rem 1rem;
 }
 
@@ -64,8 +62,8 @@
 
 .text-contain button {
     padding: 0.5rem;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--text);
+    color: var(--background);
     border: none;
 }
 

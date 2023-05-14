@@ -10,9 +10,14 @@ html {
     font-size: calc(15px + 0.390625vw);
 }
 
+:root {
+    --text: #000;
+    --background: #fff;
+}
+
 body {
-    /* background-color: var(--main); */
-    color: var(--primary);
+    background-color: var(--background);
+    color: var(--text);
 }
 
 a,
@@ -22,11 +27,7 @@ a:active {
     color: inherit;
 }
 
-:root {
-    --primary: #fff;
-    --secondary: #324E6E;
-    --main: #263f5b;
-}
+
 
 /* --------Header Navigation-------- */
 
@@ -72,6 +73,7 @@ nav {
     font-weight: 700;
     width: 62%;
 }
+
 /* -------------Burger------------ */
 
 .row-burger {
@@ -246,7 +248,7 @@ nav {
 }
 
 .slide-in.appear .from-left,
-.slide-in.appear .from-right{
+.slide-in.appear .from-right {
     transform: translateX(0);
     opacity: 1;
 }
@@ -311,4 +313,3 @@ nav {
     }
 
 }
-
