@@ -331,15 +331,55 @@ nav {
 .legal-links a {
     font-weight: bold;
     margin: 1rem;
+    display: inline-block;
 }
-.bottom-row{
+
+.bottom-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.certifications img{
+
+.certifications img {
     max-width: 100%;
 }
+
+/* --------Fade Transitions------ */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.page-content {
+    overflow: hidden;
+}
+
+.from-left {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.from-right {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.from-left,
+.from-right {
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+}
+
+.slide-in.appear .from-left,
+.slide-in.appear .from-right{
+    transform: translateX(0);
+    opacity: 1;
+}
+
 
 
 
