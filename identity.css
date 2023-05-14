@@ -1,0 +1,34 @@
+#header {
+    --text: #000;
+    --text-inverse: #000;
+    --background: transparent;
+}
+
+#header.nav-scrolled {
+    --text: #000;
+    --text-inverse: #fff;
+    --background: #fff;
+}
+
+#header.nav-scrolled .contain-nav {
+    background-color: var(--background);
+}
+
+/* --------Hero------- */
+
+.hero-identity{
+    margin: 6rem 1rem 2rem;
+}
+.hero-identity .text-content{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/* --------Values------- */
+
+.values-container{
+    background-color: #fff;
+    height: 80vh;
+}
