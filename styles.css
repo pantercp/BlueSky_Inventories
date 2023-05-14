@@ -204,7 +204,7 @@ nav {
 .hero-section h1 {
     color: #fff;
     position: absolute;
-    bottom: 10%;
+    bottom: 3%;
     left: 10%;
 }
 
@@ -234,14 +234,17 @@ nav {
 .contain-services {
     display: flex;
     align-items: center;
+    margin: 1rem 0;
 }
 
 .contain-services .box-image {
     padding: 0 1rem;
+    text-align: center;
 }
 
 .contain-services img {
     width: 100%;
+    max-width: 400px;
 }
 
 .text-contain {
@@ -265,6 +268,7 @@ nav {
 .contain-samples {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .contain-samples .box-image {
@@ -273,6 +277,7 @@ nav {
 
 .contain-samples img {
     width: 100%;
+    padding: 2rem 1rem;
 }
 
 .contain-samples .text-contain h2 {
@@ -309,7 +314,6 @@ nav {
 
 .client-stories p {
     margin: 1rem 0;
-    font-weight: bold;
 }
 
 .client-stories span {
@@ -463,9 +467,12 @@ nav {
     .contain-services h1 {
         font-size: 1.5rem;
     }
+    .contain-services img {
+        padding: 1rem;
+    }
 
     .contain-samples .text-contain {
-        margin: 1rem;
+        margin: 1rem auto;
     }
 
     .contain-samples .text-contain h2 {
@@ -494,6 +501,9 @@ nav {
 
     .contain-samples {
         flex-wrap: wrap-reverse;
+    }
+    .contain-samples .text-contain h2{
+        font-size: 1.7rem;
     }
 
     .contain-contact {

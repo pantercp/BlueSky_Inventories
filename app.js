@@ -44,7 +44,7 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneObserver.observe(sectionOne);
 
 const appearOptions = {
-  threshold: 1,
+  threshold: 0.3,
   // rootMargin: "0px 0px -100px 0px"
 };
 
