@@ -1,0 +1,95 @@
+/* --------Accreditations Content-------- */
+
+.hero-section {
+    height: 600px;
+    background-image: url(../images/hero.jpg);
+    background-position: 30% 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background);
+}
+
+.hero-section h1{
+    width: 800px;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid var(--background);
+    text-align: center;
+    margin: 1rem 3rem;
+}
+
+.page-content{
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 1000px;
+}
+.page-content h4{
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+.page-content p{
+    margin-bottom: 4rem;
+    text-align: justify;
+}
+
+/* --------Terms & Privacy Content-------- */
+
+#header.terms{
+    position: relative;
+}
+
+#header.terms .logo-title{
+    color: #000;
+}
+
+#header.terms .navbar-fixed-top{
+    background-color: #fff;
+    box-shadow: 0px 2px rgba(0, 0, 0, .1);
+}
+
+#header.terms .burger-icon::before,
+#header.terms .burger-icon::after {
+    background: #000;
+}
+
+.legal-container{
+    margin: 4rem 1rem;
+    padding: 1rem 2rem;
+    background-color: #ebebeb;
+}
+
+.legal-container h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+.legal-container h4{
+    margin: 2rem 0;
+}
+
+.legal-container p{
+    text-align: justify;
+}
+
+.legal-container li{
+    margin: 1rem 0;
+}
+
+
+/* -------Terms Content------- */
+
+.legal-container ul{
+    padding-inline-start: 20px;
+}
+
+/* ---------Privacy Content------- */
+
+.legal-container ol{
+    padding-inline-start: 20px;
+}
+
+.legal-container.privacy p{
+    margin: 1rem 0;
+}
+
