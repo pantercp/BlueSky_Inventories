@@ -74,6 +74,10 @@ nav {
     width: 62%;
 }
 
+.logo-title a{
+    text-decoration: none;
+}
+
 /* -------------Burger------------ */
 
 .row-burger {
