@@ -70,8 +70,13 @@
     align-items: center;
 }
 
+.contain-footprint .box-image {
+    text-align: center;
+}
+
 .contain-footprint img {
     width: 100%;
+    max-width: 525px;
     padding: 2rem;
 }
 
@@ -99,6 +104,7 @@
 
 .contain-contact img {
     width: 100%;
+    max-width: 650px;
     padding: 2rem;
 }
 

@@ -289,6 +289,10 @@ nav {
         flex-direction: column;
     }
 
+    .logo-title {
+        width: 75%;
+    }
+
     .logo-title.open {
         position: absolute;
         top: 2rem;
