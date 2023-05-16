@@ -1,3 +1,5 @@
+// Burger and Drop Menu
+
 const burgerBtn = document.querySelector('.row-burger');
 const dropMenu = document.querySelector('.drop-menu');
 const navTitle = document.querySelector('.logo-title');
@@ -16,6 +18,23 @@ burgerBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+// Page Finder
+
+const pageFinder = document.querySelector(".page-finder");
+const pageList = document.querySelector(".drop-list").children;
+
+document.addEventListener('DOMContentLoaded', function() {
+   for(pageItem of pageList){
+    if(pageFinder.id == pageItem.firstChild.innerHTML){
+      pageItem.classList.add("open")
+    }
+   }
+}, false);
+
+
+
+// Intersection Animations
 
 const header = document.querySelector("#header");
 const sectionOne = document.querySelector(".hero-section");
