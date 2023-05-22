@@ -6,7 +6,8 @@ body{
 
 .hero-section {
     height: 600px;
-    background-image: url(images/hero.jpg);
+    background-image: url(images/hero-2.jpg);
+    background-size: cover;
     background-position: 50% 50%;
     position: relative;
 }

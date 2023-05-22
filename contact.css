@@ -2,7 +2,8 @@
 
 .hero-section {
     height: 600px;
-    background-image: url(images/cityscape.jpg);
+    background-image: url(images/cityscape-2.jpg);
+    background-size: cover;
     background-position: 30% 50%;
     position: relative;
 }
